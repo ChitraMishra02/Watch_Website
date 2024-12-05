@@ -1,0 +1,172 @@
+// About Shop starts
+.About-Shop{
+    background-color: $black-col;
+    color:$white-col;
+    padding:25px;
+    
+    .shop{
+        display:flex;
+        justify-content: space-between;
+        padding:3rem;
+        
+         h1{
+             font-weight:700;
+             line-height:1rem;              
+         }
+
+         p{
+              margin-top:50px;
+         }
+
+         button{
+              margin-top:30px;
+              width:120px;
+              height:40px;
+              background-color: $color;
+              color:$white-col;
+              border:none;
+              transition:0.4s;
+            }
+
+         button:hover{
+              background-color: $white-col;
+              color:black;
+            }
+                 
+         .right{
+             margin-top:5rem;
+             margin-left:10rem;
+             
+                  
+              img{
+                   width:90%;
+                   padding-left:30px;
+                   padding-top:30px;
+                   border-top:2px solid $white-col;
+                   transition: 0.4s;
+                   
+                }
+                img:hover{
+                     transform:scale(1.2);
+                  }
+                
+           }
+       }
+    
+
+// Four Watches starts
+
+ .four-watches{
+      display:flex;
+      justify-content: space-evenly;
+      padding:30px;
+           
+     .Watch{
+           border:1px solid $white-col;
+           height:199px;
+           width:17%;
+
+         img{
+              width:100%;
+              padding:3rem;
+              transition: 0.4s;
+          }
+
+         img:hover{
+              transform: scale(1.2);
+          }
+
+        }             
+
+      }
+
+    }
+
+// about shop ends
+
+// media query start
+
+@media only screen and (max-width:$mediaquery){
+
+      //  about shop
+
+         .About-Shop{
+
+
+               .shop{
+                    
+                    h1{
+                         font-size:2rem;
+                    }
+                    p{
+                        font-size:1rem;
+                    }
+                    button{
+                         width:90px;
+                         height:30px;
+                         font-size: 1rem;
+                    }
+
+
+                 .right{
+                        margin-left:3rem;
+                        width:70%;
+
+                        img{
+                            width:60%;
+                            border-top:0px;
+                        }
+                 }
+             }
+             
+              .four-watches{
+
+                  display:none;
+
+              }
+
+
+
+
+            }
+
+      
+          
+      }
+
+
+    //   mediaquery  max-width :412px
+
+    @media only screen and (max-width:$mediaquery3){
+
+
+                   .About-Shop{
+                         
+                         .shop{
+                               
+                              button{
+                                  font-size:1rem;   
+                                }
+
+
+                             .right{
+                                   
+                                  img{
+                                        padding-left:0px;
+                                        width:80px;
+                                  }
+
+
+                             }
+
+
+
+
+                           }
+
+  
+                      } 
+
+            
+           }
+

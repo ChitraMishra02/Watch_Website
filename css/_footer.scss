@@ -1,0 +1,68 @@
+  //   footer starts
+   .footer {
+
+    h1{
+          font-weight:700;
+          font-size:2.1rem;
+          margin-top:80px;
+          margin-right:50px;
+          line-height:0px;
+          
+
+    }
+    h1:hover{
+         color:$color;
+    }
+
+    .span-medias{
+
+            text-align: center;
+
+            .fa{
+                  padding:3rem;
+                  font-size:3rem;
+            }
+            
+    }
+
+    .span-boxes{
+             display:flex;
+             justify-content: space-evenly;
+             color:grey;
+    }
+
+    p{
+          padding:40px;
+          margin-right:50px;
+    }
+
+    span{
+        transition: 0.4s;
+    }
+    span:hover{
+          text-decoration: underline;
+          cursor:pointer;
+          color:$color;
+    }
+}
+
+// Media query starts
+
+@media only screen and (max-width:$mediaquery){
+
+            
+           .footer{
+               
+                h1{
+                    margin-left:3rem;
+                }
+
+                b:hover{
+                      color:$color;
+                      
+                }
+
+           }
+
+
+}

@@ -1,0 +1,66 @@
+// variables
+$primary-font:"raleway",sans-serif;
+$primary-color:#4e82be;
+$white-col:#fff;
+$black-col:#000;
+$color:#b70213;
+$mediaquery:900px;
+$mediaquery2:1217px;
+$mediaquery3:412px;
+
+// mixin and include
+
+@mixin flex-property{
+        display:flex;
+        justify-content: space-between;
+}
+@mixin button-property{
+     width:150px;
+     height:40px;
+     background-color:$color;
+     border-radius: 50px;
+     color:$white-col;
+     border:none;
+}
+
+@mixin button{
+     margin-top:2rem;
+     width:120px;
+     background-color: $color;
+     border-radius:3rem;
+     border:none;
+     font-size:smaller;
+     color:$white-col;
+     transition:0.4s;
+}
+
+// universal selector
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: $primary-font;
+   
+}
+
+html{
+     font-size: 15px;
+}
+.clearfix::after{
+       content:"";
+       clear:both;
+       display: block;
+}
+
+@import "header";
+@import "ourWatches";
+@import "Aboutshop";
+@import "Testimonial";
+@import "map";
+@import "footer";
+
+// content
+
+
+
+

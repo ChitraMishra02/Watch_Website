@@ -1,0 +1,131 @@
+   // map starts
+     .Map{
+        display:flex;
+        justify-content: space-evenly;
+        background-color: black;
+       padding-top:20px;
+       padding-bottom:20px;
+        
+        .left-Form{
+            
+                margin-left:50px;
+              
+                h1{
+                      margin-left:50px;
+                      line-height:19px;
+                      color:$white-col;
+                      font-weight:700;
+                }
+                form{
+                     padding:50px;
+                      input{
+                            width:300px;
+                             height:50px;
+                             border-radius:90px;
+                             padding:3px;
+                      }
+                      textarea{
+                            width:300px;
+                            height:100px;
+                            border-radius: 30px;
+                            padding-top:40px;
+                      }
+
+                      button{
+                          margin-top:1rem;
+                          width:120px;
+                          height:40px;
+                          background-color: $color;
+                          border-radius:3rem;
+                          border:none;
+                          font-size:smaller;
+                          transition: 0.4s;
+                      }
+                      button:hover{
+                            background-color: $white-col;
+                            color:$black-col;
+                            cursor:pointer;
+
+                      }
+                }
+                
+           
+           }
+
+        .right-form{
+               width:50%;
+               padding:40px;
+               margin-top:90px;
+               
+
+               img{
+                  width:100%;
+                  margin-left:10rem;
+                  border-top:1px solid $white-col;
+                  padding:30px;
+               }
+        }
+        
+ }     
+ 
+// Media Query Starts
+
+@media only screen and (max-width:$mediaquery){
+
+         .Map{
+            display:flex;
+            flex-wrap:wrap;
+         
+             .left-Form{
+                     background-color: transparent;
+                    
+                     
+
+                     h1{
+                         margin-left:0;
+                     }
+                       
+                     form{
+                          
+                               
+
+                          button{
+                                margin-left:2rem;
+                          }
+
+                     }
+
+                     
+                  }
+
+            .right-form{
+                     background-color:blue;
+                     width:100%;
+                     display: none;
+            }
+
+         }
+                 
+}
+
+
+// media query start 412px
+
+@media only screen and (max-width:$mediaquery3) {
+
+          .Map{
+
+                .left-Form {
+                         
+                      margin:0px;
+
+
+                }
+
+
+
+          }
+             
+
+
+}
